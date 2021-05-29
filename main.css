@@ -65,9 +65,64 @@ html, body {
     height: 100%;
     opacity: 0;
     position: absolute;
+    z-index: -1;
     
 }
 .main .select {
     opacity: 1;
     z-index: 10;
+}
+.mainpage .status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% / 3 - 10px);
+    height: calc(100% - 150px);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .info {
+    position: absolute;
+    top: 10px;
+    left: calc(100% / 3 + 10px);
+    width: calc(100% / 3 - 20px);
+    height: calc((100% - 150px) / 3);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .path {
+    position: absolute;
+    top: calc((100% - 150px) / 3 + 20px );
+    left: calc(100% / 3 + 10px);
+    width: calc(100% / 3 - 20px);
+    height: calc((100% - 150px) / 3 - 10px);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .network {
+    position: absolute;
+    top: calc((100% - 150px) / 3 * 2 + 20px);
+    left: calc(100% / 3 + 10px);
+    width: calc(100% / 3 - 20px);
+    height: calc((100% - 150px) / 3 - 10px);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .request {
+    position: absolute;
+    top: 10px;
+    left: calc(100% / 3 * 2);
+    width: calc(100% / 3 - 20px);
+    height: calc(100% - 150px);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .fullinfo {
+    position: absolute;
+    top: calc(100% - 130px);
+    left: 10px;
+    width: calc(100% - 30px);
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
 }

@@ -4,9 +4,7 @@ export function SideItem(el) {
     const id = sideItemCount;
     ++sideItemCount;
     
-    
-
-    el.addEventListener("click", function() {
+    function select() {
         if(selectSideel) {
             selectSideel.classList.remove("select");
 
@@ -14,6 +12,11 @@ export function SideItem(el) {
         el.classList.add("select");
         selectSideel = el;
         OpenPage(id);
+    }
+    this.select = select;
+
+    el.addEventListener("click", function() {
+        select();
     })
     el.addEventListener("mouseover", function() {
         el.classList.add("cursor");
