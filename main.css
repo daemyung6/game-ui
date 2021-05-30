@@ -113,7 +113,16 @@ html, body {
     top: 10px;
     left: calc(100% / 3 * 2);
     width: calc(100% / 3 - 20px);
-    height: calc(100% - 150px);
+    height: calc((100% - 150px) / 2 - 5px);
+    background-color: white;
+    border-radius: 10px;
+}
+.mainpage .responce {
+    position: absolute;
+    top: calc((100% - 150px) / 2 + 15px);
+    left: calc(100% / 3 * 2);
+    width: calc(100% / 3 - 20px);
+    height: calc((100% - 150px) / 2 - 5px);
     background-color: white;
     border-radius: 10px;
 }

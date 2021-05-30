@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <!-- 매인 페이지 -->
+    <!-- 메인 페이지 -->
     <div class="side" id="side">
+        <div class="item">
+            메인 페이지
+        </div>
         <div class="item">
             코로나 현황
         </div>
@@ -28,17 +31,67 @@
     </div>
     <div class="main">
         <div class="page mainpage">
-            <div class="status"></div>
-            <div class="info"></div>
-            <div class="path"></div>
-            <div class="network"></div>
-            <div class="request"></div>
-            <div class="responce"></div>
-            <div class="fullinfo"></div>
+            <div class="status">
+                <div class="graph">
+                    일별 확진자 그래프
+                </div>
+                <div class="graph">
+                    기간+연령별 확진자 그래프
+                </div>
+            </div>
+            <div class="info">
+                <div class="item">
+                    확진자 정보 관리
+                </div>
+            </div>
+            <div class="path">
+                <div class="item">
+                    이동 경로 관리
+                </div>
+            </div>
+            <div class="network">
+                <div class="item">
+                    전파 네트워크
+                </div>
+            </div>
+            <div class="request">
+                <div class="item">
+                    정보 제공 요청
+                </div>
+            </div>
+            <div class="responce">
+                <div class="item">
+                    정보 제공 현황
+                </div>
+            </div>
+            <div class="fullinfo">
+                <div class="item">
+                    수치
+                    <div class="number">
+                        검사자
+                    </div>
+                    <div class="number">
+                        확진자
+                    </div>
+                    <div class="number">
+                        완치자
+                    </div>
+                    <div class="number">
+                        사망자
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Chart with ChartJS -->
         <div class="page">
-            정보 관리
+            <div class="graph">
+                일별 확진자 그래프
+            </div>
+            <div class="graph">
+                기간+연령별 확진자 그래프
+            </div>
         </div>
+        <!--  -->
         <div class="page">
             이동 경로 관리
         </div>
@@ -53,18 +106,6 @@
         </div>
         <div class="page">
             수치
-            <div class="number">
-                검사자
-            </div>
-            <div class="number">
-                확진자
-            </div>
-            <div class="number">
-                완치자
-            </div>
-            <div class="number">
-                사망자
-            </div>
         </div>
     </div>
 </body>
