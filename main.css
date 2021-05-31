@@ -117,7 +117,7 @@ html, body {
     background-color: white;
     border-radius: 10px;
 }
-.mainpage .responce {
+.mainpage .response {
     position: absolute;
     top: calc((100% - 150px) / 2 + 15px);
     left: calc(100% / 3 * 2);
@@ -134,4 +134,22 @@ html, body {
     height: 120px;
     background-color: white;
     border-radius: 10px;
+}
+.mainpage .item {
+    font-size: 25px;
+    font-family: NanumBarunGothicBold;
+    margin: 20px 0px 0px 20px;
+}
+
+.mainpage .fullinfo .item {
+    font-size: 25px;
+    font-family: NanumBarunGothicBold;
+    margin: 5px 0px 0px 5px;
+}
+
+.mainpage .fullinfo .number{
+    font-size: 16px;
+    font-family: NanumBarunGothicBold;
+    display: inline-block;
+    margin: 5px 0px 0px 50px;
 }

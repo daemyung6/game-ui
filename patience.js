@@ -36,6 +36,7 @@ function People(people) {
         this.place = places[2];
         this.who = "first";
         this.date = startdate;
+        this.id = 0;
     }
     this.id = peopleList.length;
     this.infections = [];
@@ -59,7 +60,7 @@ function nextPeople(people){
     this.who = people.id;
     this.id = peopleList.length;
     this.infections = [];
-    this.date = randomDate(people.date);
+    this.date = people.date;
     ++count;
 
     for (let i = 0; i < infectionMAX * Math.random() - 1; i++) {
@@ -67,7 +68,9 @@ function nextPeople(people){
             return;
         }
         let p = new People(this);
-        this.date = randomDate(startdate);
+        let date1 = people.date.getTime();
+        date1 += 86400000;
+        this.date = date1;
         this.infections.push(p);
         peopleList.push(p);
     }
