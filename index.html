@@ -59,7 +59,7 @@
                     정보 제공 요청
                 </div>
             </div>
-            <div class="responce">
+            <div class="response">
                 <div class="item">
                     정보 제공 현황
                 </div>
@@ -67,28 +67,44 @@
             <div class="fullinfo">
                 <div class="item">
                     수치
-                    <div class="number">
-                        검사자
-                    </div>
-                    <div class="number">
-                        확진자
-                    </div>
-                    <div class="number">
-                        완치자
-                    </div>
-                    <div class="number">
-                        사망자
-                    </div>
+                </div>
+                <div class="number">
+                    검사자
+                    <span>
+                        4800
+                    </span>
+                </div>
+                <div class="number">
+                    확진자
+                    <span>
+                        1200
+                    </span>
+                </div>
+                <div class="number">
+                    완치자
+                    <span>
+                        1200
+                    </span>
+                </div>
+                <div class="number">
+                    사망자
+                    <span>
+                        1200
+                    </span>
                 </div>
             </div>
         </div>
         <!-- Chart with ChartJS -->
         <div class="page">
             <div class="graph">
-                일별 확진자 그래프
+                <canvas id="dayGraph" width="200" height="300">
+
+                </canvas>
             </div>
             <div class="graph">
-                기간+연령별 확진자 그래프
+                <canvas id="ageGraph">
+
+                </canvas>
             </div>
         </div>
         <!--  -->
